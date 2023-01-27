@@ -1,0 +1,41 @@
+
+/* SCSS HEX */
+$cultured: #f0edeeff;
+$oxford-blue: #011638ff;
+$fuzzy-wuzzy: #c97064ff;
+$teal-blue: #077187ff;
+$shiny-shamrock: #74a57fff;
+
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-right: linear-gradient(90deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-bottom: linear-gradient(180deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-left: linear-gradient(270deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-top-right: linear-gradient(45deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-bottom-right: linear-gradient(135deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-top-left: linear-gradient(225deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-bottom-left: linear-gradient(315deg, #f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+$gradient-radial: radial-gradient(#f0edeeff, #011638ff, #c97064ff, #077187ff, #74a57fff);
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: black;
+  background-color: $cultured;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+}

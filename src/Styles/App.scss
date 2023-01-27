@@ -1,0 +1,33 @@
+/* SCSS HEX */
+$cultured: #f0edeeff;
+$oxford-blue: #011638ff;
+$fuzzy-wuzzy: #c97064ff;
+$teal-blue: #077187ff;
+$shiny-shamrock: #74a57fff;
+
+#root {
+  max-width: 1280px;
+  margin: 0px ;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.App{
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+}
+
+.page-content{
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
