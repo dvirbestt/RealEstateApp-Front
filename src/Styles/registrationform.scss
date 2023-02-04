@@ -2,8 +2,21 @@ $cultured: #f0edeeff;
 $oxford-blue: #011638ff;
 $fuzzy-wuzzy: #c97064ff;
 $teal-blue: #077187ff;
-$shiny-shamrock: #74a57fff;
+$shiny-shamrock: rgba(116, 165, 127, 0.87);
 
 .error-msg{
-  color: $fuzzy-wuzzy;
+  background-color: $fuzzy-wuzzy;
+  width: 300px;
+  height: 25px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.success-msg {
+  background-color: $shiny-shamrock;
+  width: 300px;
+  height: 25px;
+  font-weight: bolder;
+  border-radius: 5px;
+
 }

@@ -1,14 +1,17 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Link} from "react-router-dom";
+import {Link,useNavigate} from "react-router-dom";
 import '../Styles/registrationform.scss'
 
 function RegisterForm(props) {
+
+    const navigate = useNavigate();
 
     const [passwordNotMatching,setPasswordNotMatching] = useState(false);
     const [password,setPassword] = useState("")
     const [passwordTooShort,setPasswordTooShort] = useState(false)
     const [repeatPassword,setRepeatPassword] = useState("")
     const [registrationErrors,setRegistrationErrors] = useState([])
+    const [registered,setRegistered] = useState([]);
 
     const username = useRef();
     const firstname = useRef();
@@ -54,13 +57,19 @@ function RegisterForm(props) {
             },
             body : JSON.stringify(registrationUser)
         })
-        if (response.status == 400) {
+        if (response.status == 400 ) {
             const data = await response.json();
             setRegistrationErrors(data)
+            setRegistered([])
         }
         if (response.ok){
             const data = await response.json()
-            console.log(data)
+            setRegistrationErrors([])
+            setRegistered(data)
+            setTimeout(() => {
+                navigate("/login")
+            },1000)
+
         }
 
 
@@ -77,6 +86,7 @@ function RegisterForm(props) {
                 {registrationErrors.length > 0 ? registrationErrors.map((error,i) => (
                     <div className="error-msg" key={i}>{error}</div>
                 )) : <></>}
+                {registered.length > 0 ? <div className="success-msg">{registered[0]}</div> : <></>}
                 <input type={"text"} placeholder={"User Name"} ref={username} required/>
                 {passwordNotMatching ? <div className={"error-msg"}>Passwords Do Not Match</div> : <></>}
                 {passwordTooShort ? <div className={"error-msg"}>Password Too Short</div> : <></>}

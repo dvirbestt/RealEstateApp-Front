@@ -41,5 +41,8 @@ input{
 
 .login-error {
   background-color: $fuzzy-wuzzy;
-  width: 200px;
+  width: 300px;
+  height: 25px;
+  font-weight: bolder;
+  border-radius: 5px;
 }
