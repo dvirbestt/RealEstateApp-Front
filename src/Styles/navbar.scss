@@ -11,11 +11,12 @@ $shiny-shamrock: #74a57fff;
     width: 100vw;
     position: fixed;
     align-items: center;
-    height: 8vh;
+    height: 5vh;
     margin-bottom: 10%;
   }
   .logo{
     font-size: 30px;
+    flex-basis: 10%;
   }
 
   .icons-container {
@@ -25,9 +26,14 @@ $shiny-shamrock: #74a57fff;
     width: 85vw;
     gap: 15px;
     padding-right: 5px;
+    flex-basis: 10%;
   }
 
+  .user-text{
+    width: 100px;
+  }
 
-
-
+  .space{
+    flex-basis: 80%;
+  }
 }

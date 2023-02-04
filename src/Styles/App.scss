@@ -21,6 +21,7 @@ a {
   padding: 0px;
   margin: 0px;
   width: 100vw;
+  color: black;
 }
 
 .page-content{
@@ -28,6 +29,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.user-text{
+  color: $cultured;
+  margin-top: 3px;
 }
 
 

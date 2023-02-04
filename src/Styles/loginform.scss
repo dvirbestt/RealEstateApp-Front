@@ -17,7 +17,7 @@ input{
   border-radius: 5px ;
   background-color: #e5e5e5;
   width: 200px;
-  height: 5vh;
+  height: 35px;
   font-size: 24px;
   color: black;
 }
@@ -26,8 +26,9 @@ input{
   border: none;
   background-color: $oxford-blue;
   width: 100px;
-  height: 4vh;
+  height: 40px;
   font-size: 20px;
+  color: $cultured;
 }
 
 ::placeholder {
@@ -36,4 +37,9 @@ input{
 
 .to-register{
   color: #0404be;
+}
+
+.login-error {
+  background-color: $fuzzy-wuzzy;
+  width: 200px;
 }
